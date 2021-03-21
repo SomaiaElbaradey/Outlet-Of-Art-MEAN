@@ -8,7 +8,7 @@ const product = require('./routes/product');
 const order = require('./routes/order');
 const auth = require('./routes/auth');
 const cart = require('./routes/cart');
-const bodyParser = require("body-parser");
+const cors = require('cors')
 
 require('dotenv').config();
 
@@ -31,12 +31,14 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ limit: "50mb" }));
+app.use(cors());
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.header("Access-Control-Allow-Methods", "*");
   next();
 });
+// app.use(express.static(__dirname + '/dist/Eco'));
 
 app.use('/api/users', user);
 app.use('/api/product', product);
@@ -45,7 +47,11 @@ app.use('/api/cart', cart);
 app.use('/api/users', auth);
 app.use('/api/admin', auth);
 
-// a global error handler that logs the error 
+// app.get('/*', function (req, res) {
+//   res.sendFile(path.join(__dirname + '/dist/Eco/index.html'));
+// });
+
+//a global error handler that logs the error 
 app.use((err, req, res, next) => {
   console.error(err)
   res.status(500).send({ error: 'internal server error' })

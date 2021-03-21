@@ -13,7 +13,6 @@ module.exports=function auth(req,res,next)
     }
    catch{
        res.status(400).send({error:'Invalid Token'})
-       
    }
 
 }

@@ -17,10 +17,19 @@ const schema = new mongoose.Schema({
         type: [mongoose.ObjectId],
         ref: "products",
     },
+    username: {
+        type: String,
+    },
+    date:{
+        type: Date,
+    },
     status: {
         type: String,
         enum: ['accepted', 'rejected', 'pending'],
         default: 'pending'
+    },
+    productNames: {
+        type: Array
     }
 })
 module.exports.orders = mongoose.model('Order', schema)
@@ -31,6 +40,9 @@ module.exports.validateOrder = function validateOrder(order) {
         _user: Joi.objectId().required(),
         totalPrice: Joi.number().required(),
         _product: Joi.array().items(Joi.objectId()),
+        username: Joi.string().required(),
+        date: Joi.date(),
+        productNames: Joi.array(),
         status: Joi.array().valid('accepted', 'rejected', 'pending'),
     })
     return schema.validate(order);

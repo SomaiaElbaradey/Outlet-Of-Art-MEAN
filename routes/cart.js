@@ -6,6 +6,7 @@ const auth = require('../middleware/auth');
 const { orders, validateOrder } = require('../schema/order');
 const multer  = require('multer');
 const Gallery = require('../schema/image');
+const users = require('../schema/user');
 
 // get all products in cart for user
 router.get('/', auth, async function (req, res) {
@@ -81,9 +82,14 @@ router.post('/checkout', auth, async function (req, res) {
     try {
         //define the order products and price
         const _user = req.user._id;
+        const user = await users.findOne({_id: _user})
+        const productNames = await products.find({_id: {$in: req.body._product}}, {title: 1});
         const value = {
             _product: req.body._product,
             totalPrice: req.body.totalPrice,
+            username: user.username,
+            date: new Date(),
+            productNames,
             _user
         }
         //validation

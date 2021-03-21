@@ -42,7 +42,7 @@ router.post('/add', auth, upload.single('image'),
 
     try {
       if (!req.file) return res.status(500).send({ message: 'Upload fail' });
-      req.body.image = 'http://localhost:3000/images/' + req.file.filename;
+      req.body.image = `${process.env.API}/images/${req.file.filename}`;
 
       const product = new Product(req.body)
       console.log(product)
