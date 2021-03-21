@@ -29,7 +29,7 @@ module.exports.sendMail = async function (userMail, username, userId) {
                         <h3>Almost done, ${username}! To complete your ECommerce sign up, we just need to verify your 
                             email address: ${userMail}</h3>
                         <div>
-                         <a none;" href="http://127.0.0.1:3000/api/users/verify/${userId}">
+                         <a none;" href="https://art-real.herokuapp.com/api/users/verify/${userId}">
                          <button style="height: 30px; background-color: #44c1c1c7; 
                          border: none; border-radius: 5%; margin: 10px; cursor: pointer;"> Verify your mail address</button><br>
                          </a>
