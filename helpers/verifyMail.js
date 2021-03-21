@@ -15,18 +15,18 @@ module.exports.sendMail = async function (userMail, username, userId) {
 
         let info = await transporter.sendMail({
             from: {
-                name: 'ECommerce',
+                name: 'Art-Real',
                 address: 'brandeldev@gmail.com'
             },
             to: `${userMail}`,
-            subject: `[ECommerce] Welcome to ECommerce ${username}`,
-            text: "Welcome to ECommerce",
+            subject: `[Art-Real] Welcome to Art-Real ${username}`,
+            text: "Welcome to Art-Real",
             html: `
                    <body style="color: white; margin: 0 auto; width: 50%; background-color: black; padding:50px">
-                    <h1>Welcome to ECommerce!</h1>
+                    <h1>Welcome to Art-Real!</h1>
                     <div style="color:rgb(18, 102, 95); background-color: white; 
                                     padding: 60px; border-radius: 5px; border: rgb(69, 85, 83) 2px solid;">
-                        <h3>Almost done, ${username}! To complete your ECommerce sign up, we just need to verify your 
+                        <h3>Almost done, ${username}! To complete your Art-Real sign up, we just need to verify your 
                             email address: ${userMail}</h3>
                         <div>
                          <a none;" href="https://art-real.herokuapp.com/api/users/verify/${userId}">
