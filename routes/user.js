@@ -5,16 +5,12 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const User = require('../schema/user');
 const auth = require('../middleware/auth')
-const cloudinary = require('../middleware/cloudinary').upload
 const upload = require('../middleware/upload')
 const { sendMail } = require('../helpers/verifyMail');
 const { forEach } = require('underscore');
 let imageUrl;
 
-
-
-/////////////////////////////// register new user //////////////////////////////////
-
+//// register new user 
 router.post('/register'
   , body('email').isLength({ min: 1 })
     .withMessage('email is required'),
@@ -32,6 +28,8 @@ router.post('/register'
 
     ////// chech if user register before
     let isUser = await User.findOne({ username: req.body.username })
+    if (isUser) return res.status(400).send('unvalid username')
+    isUser = await User.findOne({ email: req.body.email })
     if (isUser) return res.status(400).send('user already registered')
     ///////////////check if image uploaded 
 

@@ -8,7 +8,7 @@ const multer = require('multer');
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'public/images');
+    cb(null, 'https://api-img-backup.herokuapp.com/'); //public/images
   },
   filename: (req, file, cb) => {
     console.log(file);
