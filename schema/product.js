@@ -6,8 +6,6 @@ const productSchema=new mongoose.Schema({
     image:{type:String},
     price:{type:Number,required:true} ,
     details:{ type:String,required:true,
-    size:{type:String},
-    type:{type:String},
     }
 })
    ///////match product schema with product table ///////

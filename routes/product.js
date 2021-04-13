@@ -61,7 +61,7 @@ router.get('/:id', async (req, res) => {
 })
 
 // get all products
-router.get('/', auth, async (req, res) => {
+router.get('/', async (req, res) => {
   const products = await Product.find()
   if (products) return res.send({ products })
 })
