@@ -57,7 +57,7 @@ router.post(
       return res
         .header("x-token", token)
         .send({
-          message: "user was logined successfully",
+          message: "user was registed successfully",
           email: user.email,
           token: token,
           isAdmin: user.isAdmin,
