@@ -60,7 +60,6 @@ router.post(
           isAdmin: user.isAdmin,
         });
     } catch (err) {
-      console.log("errrr");
       res.send({ error: err });
     }
   }

@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
     password: { type: String, required: true },
     image:  {type:String},
     cloudinary_id:{type:String},
-    gender: { type: String, required: true },
+    gender: { type: String },
     isAdmin: { type: Boolean, default: false },
     isActive: { type: Boolean, default: false }
 })
