@@ -55,7 +55,7 @@ router.post('/add', auth, upload.single('image'),
   })
 
 // get product by id
-router.get('/:id', auth, async (req, res) => {
+router.get('/:id', async (req, res) => {
   const product = await Product.find({ _id: req.params.id })
   if (product) return res.send(product)
 })
