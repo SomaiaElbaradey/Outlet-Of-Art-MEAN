@@ -52,7 +52,11 @@ router.post('/register'
       await user.save()
       sendMail(user.email, user.username, user._id);
 
-      return res.send({ message: 'user was registered successfully' })
+        /////////// create token by user id //////////
+        const token=jwt.sign({_id:user._id, isAdmin:user.isAdmin},process.env.SECRET_KEY)
+        return res.header('x-token',token).send({message:'user was logined successfully',email:user.email,
+           token:token, isAdmin:user.isAdmin}) 
+
     }
     catch (err) {
       res.send({ error: err })
