@@ -9,6 +9,7 @@ const upload = require("../middleware/upload");
 const { sendMail } = require("../helpers/verifyMail");
 const { forEach } = require("underscore");
 let imageUrl;
+const jwt=require('jsonwebtoken')
 
 //// register new user
 router.post(
@@ -16,7 +17,6 @@ router.post(
   body("email").isLength({ min: 1 }).withMessage("email is required"),
   body("username").isLength({ min: 1 }).withMessage("username is required"),
   body("password").isLength({ min: 4 }).withMessage("password is required"),
-  body("gender").isLength({ min: 1 }).withMessage("gender is required"),
   async (req, res) => {
     ///// body validation
 
@@ -36,7 +36,6 @@ router.post(
       email: req.body.email,
       username: req.body.username,
       password: req.body.password,
-      //// image:image.url,
       gender: req.body.gender,
       isAdmin: req.body.isAdmin,
     });
@@ -48,14 +47,12 @@ router.post(
     try {
       await user.save();
       sendMail(user.email, user.username, user._id);
-
       /////////// create token by user id //////////
       const token = jwt.sign(
         { _id: user._id, isAdmin: user.isAdmin },
         process.env.SECRET_KEY
       );
-      return res
-        .header("x-token", token)
+      res
         .send({
           message: "user was registed successfully",
           email: user.email,
@@ -63,6 +60,7 @@ router.post(
           isAdmin: user.isAdmin,
         });
     } catch (err) {
+      console.log("errrr");
       res.send({ error: err });
     }
   }
