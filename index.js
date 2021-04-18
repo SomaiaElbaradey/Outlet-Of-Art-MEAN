@@ -38,7 +38,7 @@ app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Methods", "*");
   next();
 });
-// app.use(express.static(__dirname + '/dist/Eco'));
+app.use(express.static(__dirname + '/dist/ECommerce'));
 
 app.use('/api/users', user);
 app.use('/api/product', product);
@@ -47,9 +47,9 @@ app.use('/api/cart', cart);
 app.use('/api/users', auth);
 app.use('/api/admin', auth);
 
-// app.get('/*', function (req, res) {
-//   res.sendFile(path.join(__dirname + '/dist/Eco/index.html'));
-// });
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname + '/dist/ECommerce/index.html'));
+});
 
 //a global error handler that logs the error 
 app.use((err, req, res, next) => {
