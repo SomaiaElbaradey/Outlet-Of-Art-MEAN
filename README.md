@@ -77,20 +77,24 @@ Before you start, make sure you have <a href="https://nodejs.org/en/download/">N
 <img src="https://i.ibb.co/MMqVk88/12.jpg" width="543" height="267" alt="ScreenShoot">
 <img src="https://i.ibb.co/JCtdYVF/13.jpg" width="543" height="267" alt="ScreenShoot">
 <img src="https://i.ibb.co/4TgSsQk/6.jpg" width="543" height="267" alt="ScreenShoot">
-<img src="https://i.ibb.co/GsDf2s7/2.jpg" width="543" height="267" alt="ScreenShoot">
+<img src="https://i.ibb.co/GsDf2s7/2.jpg" width="500" height="267" alt="ScreenShoot">
 
 ### Registration:
-<img src="https://i.ibb.co/2hrHkCy/1.jpg" width="500" height="267" alt="ScreenShoot">
+<img src="https://i.ibb.co/2hrHkCy/1.jpg" width="543" height="267" alt="ScreenShoot">
 
 ## Screenshots - Registered User
 <img src="https://i.ibb.co/QjG0Jt9/14.jpg" width="543" height="267" alt="ScreenShoot">
+
+### User Cart:
 <img src="https://i.ibb.co/x3bNX1M/7.jpg" width="543" height="267" alt="ScreenShoot">
+
+### User Orders:
 <img src="https://i.ibb.co/6N1d8XQ/8.jpg" width="543" height="267" alt="ScreenShoot">
 
 ## Screenshots - Admin
 <img src="https://i.ibb.co/31LVxVn/11.jpg" width="543" height="267" alt="ScreenShoot">
-<img src="https://i.ibb.co/XjnsZXr/10.jpg" width="543" height="267" alt="ScreenShoot">
-<img src="https://i.ibb.co/fntnzVS/9.jpg" width="543" height="267" alt="ScreenShoot">
+<img src="https://i.ibb.co/XjnsZXr/10.jpg" width="500" height="267" alt="ScreenShoot">
+<img src="https://i.ibb.co/fntnzVS/9.jpg" width="500" height="267" alt="ScreenShoot">
 
 
 ## Deployment
