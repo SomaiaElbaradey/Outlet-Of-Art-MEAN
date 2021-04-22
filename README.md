@@ -92,9 +92,13 @@ Before you start, make sure you have <a href="https://nodejs.org/en/download/">N
 <img src="https://i.ibb.co/6N1d8XQ/8.jpg" width="543" height="267" alt="ScreenShoot">
 
 ## Screenshots - Admin
+
+### Modify Orders:
 <img src="https://i.ibb.co/31LVxVn/11.jpg" width="543" height="267" alt="ScreenShoot">
-<img src="https://i.ibb.co/XjnsZXr/10.jpg" width="500" height="267" alt="ScreenShoot">
-<img src="https://i.ibb.co/fntnzVS/9.jpg" width="500" height="267" alt="ScreenShoot">
+
+### Modify Products:
+<img src="https://i.ibb.co/XjnsZXr/10.jpg" width="490" height="267" alt="ScreenShoot">
+<img src="https://i.ibb.co/fntnzVS/9.jpg" width="490" height="267" alt="ScreenShoot">
 
 
 ## Deployment
