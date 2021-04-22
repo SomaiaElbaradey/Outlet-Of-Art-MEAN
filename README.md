@@ -21,7 +21,6 @@ Back-end repo for "Outlet of Art".<br>
     </li>
     <li><a href="#usage">Usage</a>
     <ul>
-        <li><a href="#screenshots">Screenshots</a></li>
         <li><a href="#deployment">Deployment</a></li>
       </ul></li>
     <li><a href="#front-end">Front-End </a></li>
@@ -77,7 +76,7 @@ Before you start, make sure you have <a href="https://nodejs.org/en/download/">N
 <img src="https://i.ibb.co/MMqVk88/12.jpg" width="543" height="267" alt="ScreenShoot">
 <img src="https://i.ibb.co/JCtdYVF/13.jpg" width="543" height="267" alt="ScreenShoot">
 <img src="https://i.ibb.co/4TgSsQk/6.jpg" width="543" height="267" alt="ScreenShoot">
-<img src="https://i.ibb.co/GsDf2s7/2.jpg" width="500" height="267" alt="ScreenShoot">
+<img src="https://i.ibb.co/GsDf2s7/2.jpg" width="543" height="330" alt="ScreenShoot">
 
 ### Registration:
 <img src="https://i.ibb.co/2hrHkCy/1.jpg" width="543" height="267" alt="ScreenShoot">
@@ -97,8 +96,8 @@ Before you start, make sure you have <a href="https://nodejs.org/en/download/">N
 <img src="https://i.ibb.co/31LVxVn/11.jpg" width="543" height="267" alt="ScreenShoot">
 
 ### Modify Products:
-<img src="https://i.ibb.co/XjnsZXr/10.jpg" width="490" height="267" alt="ScreenShoot">
-<img src="https://i.ibb.co/fntnzVS/9.jpg" width="490" height="267" alt="ScreenShoot">
+<img src="https://i.ibb.co/XjnsZXr/10.jpg" width="543" height="340" alt="ScreenShoot">
+<img src="https://i.ibb.co/fntnzVS/9.jpg" width="543" height="330" alt="ScreenShoot">
 
 
 ## Deployment
