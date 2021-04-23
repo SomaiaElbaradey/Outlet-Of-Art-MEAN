@@ -1,6 +1,6 @@
 # Outlet of Art
 Back-end repo for "Outlet of Art".<br>
-"Outlet of Art" is a simple MEAN Stack ECommerce application to offer and buy artwork.
+"Outlet of Art" is a simple MEAN Stack ECommerce application where many buyers and sellers can buy and sell products.
 
 <details open="open">
   <summary>Table of Contents</summary>
