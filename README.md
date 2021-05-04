@@ -30,7 +30,7 @@ Back-end repo for "Outlet of Art".<br>
 ## About The Project
 
 ## App Functionality
-Outlet of Art provides many functionalities to the registered user, app guest and app admin:
+Outlet of Art provides many functionalities to the app guest, registered user and app admin:
 
  
  <ul>
@@ -61,7 +61,7 @@ Outlet of Art provides many functionalities to the registered user, app guest an
 </ul>
 
  <ul>
-  <li>Registered user can:
+  <li>An admin can:
      <ol>
         <li>Login</li>
         <li> View all products with details </li>
