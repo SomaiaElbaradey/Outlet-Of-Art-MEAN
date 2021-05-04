@@ -30,19 +30,39 @@ Back-end repo for "Outlet of Art".<br>
 ## About The Project
 
 ## App Functionality
-Outlet of Art provides many functionalities to the registered user or to the app guest:
+Outlet of Art provides many functionalities to the registered user, app guest and app admin:
 <ul>
   A guest can:
+    <li>Reqister </li>
+    <li>View all products with details </li>
+    <li>View summary about the site </li>
+ </ul>
+ 
+ <ul>
+  Registered user can:
     <li>Login</li>
-    <li>Reset his Password</li>
-    <li> View his TODOs and the date every TODO was created on </li>
-    <li> Add new TODO to the existing TODOs  </li>
-    <li> Update an existed TODO data and details </li>
-    <li> Delete from his TODOs </li>
-    <li> Filter his TODOs grouped by the month or the day TODOs were created on </li>
-    <li> Make a group of TODOs inside one TODO that are related to each other </li>
+    <li> View all products with details </li>
+    <li> Search product by title </li>
+    <li> Add product to his cart   </li>
+    <li> View Cart </li>
+    <li> Delete item from cart </li>
+    <li> CheckOut to make order from cart  </li>
+    <li> View profile Info </li>
+  <li> View each order state </li>
+  <li> Cancel order if pending </li>
  </ul>
 
+ <ul>
+  Registered user can:
+    <li>Login</li>
+    <li> View all products with details </li>
+    <li> Search product by title </li>
+    <li> Create new product   </li>
+    <li> Delete product from the site </li>
+    <li> Modify product </li>
+    <li> Modify any order state </li>
+ </ul>
+ 
 ## App Technologies
 <ul>
 <li> Backend development Using (ExpressJs - NodeJS)</li>
