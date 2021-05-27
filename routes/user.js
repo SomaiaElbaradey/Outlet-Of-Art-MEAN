@@ -38,7 +38,8 @@ router.post('/register'
       password: req.body.password,
       //// image:image.url,
       gender: req.body.gender,
-      isAdmin: req.body.isAdmin
+      isAdmin: req.body.isAdmin,
+      isActive: true
 
     });
     //// hashing password
