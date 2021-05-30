@@ -134,7 +134,7 @@ Before you start, make sure you have <a href="https://nodejs.org/en/download/">N
 
 
 ## Deployment
-The app deployed at:<a href="https://outlet-of-art.herokuapp.com/"> Outlet of Art </a>
+The app deployed at Heroku:<a href="https://outlet-of-art.herokuapp.com/"> Outlet of Art </a>
 
 ## Front End 
 Front-end repo: <a href="https://github.com/SomaiaElbaradey/Outlet-Of-Art">Outlet of Art - Front Repo</a> 
